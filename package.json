@@ -1,6 +1,6 @@
 {
-  "name": "react-comments-section",
-  "version": "3.0.1",
+  "name": "@pmhieu/react-comments-section",
+  "version": "3.0.7",
   "description": "React component library for a functioning comments section",
   "author": "RiyaNegi",
   "license": "MIT",
@@ -54,7 +54,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.2.0",
-    "microbundle-crl": "^0.13.10",
+    "microbundle-crl": "^0.13.11",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
     "react": "^18.3.1",

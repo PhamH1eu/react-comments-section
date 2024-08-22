@@ -50,7 +50,7 @@ const CommentStructure = ({
             <MenuItem
               onClick={() => globalStore.handleAction(info.comId, true)}
             >
-              edit
+              Chỉnh sửa
             </MenuItem>
             <MenuItem>
               <DeleteModal comId={info.comId} parentId={parentId} />
@@ -116,11 +116,12 @@ const CommentStructure = ({
             {currentUser && (
               <div>
                 <button
+                  style={{width: '100px'}}
                   className='replyBtn'
                   onClick={() => globalStore.handleAction(info.comId, false)}
                 >
                   <div className='replyIcon' />
-                  <span style={{ marginLeft: 17 }}>Reply</span>
+                  <span style={{ marginLeft: 17 }}>Phản hồi</span>
                 </button>
               </div>
             )}
@@ -143,6 +144,7 @@ const CommentStructure = ({
               marginLeft: '-15px'
             }}
             comId={info.comId}
+            username={info.fullName}
             fillerText={''}
             mode={'replyMode'}
             parentId={parentId}

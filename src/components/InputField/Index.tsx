@@ -9,6 +9,7 @@ import AdvancedInput from './AdvancedInput'
 interface InputFieldProps {
   formStyle?: object
   comId?: string
+  username?: string
   fillerText?: string
   parentId?: string
   mode?: string
@@ -23,6 +24,7 @@ interface InputFieldProps {
 const InputField = ({
   formStyle,
   comId,
+  username,
   fillerText,
   parentId,
   mode,
@@ -33,7 +35,7 @@ const InputField = ({
   imgStyle,
   imgDiv
 }: InputFieldProps) => {
-  const [text, setText] = useState('')
+  const [text, setText] = useState(username ? "@"+username+": " : "")
 
   useEffect(() => {
     if (fillerText) {

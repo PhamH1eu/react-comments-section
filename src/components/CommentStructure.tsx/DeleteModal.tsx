@@ -18,11 +18,11 @@ const DeleteModal = ({ comId, parentId }: DeleteModalProps) => {
   return (
     <div>
       <div style={{ width: '100%' }} onClick={onOpenModal}>
-        delete
+        Xoá
       </div>
       <Modal open={open} onClose={onCloseModal} center>
-        <h2>Are you sure?</h2>
-        <p>Once you delete this comment it will be gone forever.</p>
+        <h2>Bạn có chắc chắn không?</h2>
+        <p>Hành động này sẽ không thể khôi phục lại</p>
         <div className='deleteBtns'>
           <button
             className='delete'
@@ -35,10 +35,10 @@ const DeleteModal = ({ comId, parentId }: DeleteModalProps) => {
                 }))
             )}
           >
-            Delete
+            Xoá
           </button>
           <button className='cancel' onClick={onCloseModal}>
-            Cancel
+            Huỷ
           </button>
         </div>
       </Modal>
