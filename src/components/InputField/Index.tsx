@@ -2,7 +2,6 @@ import './InputField.scss'
 import { useContext, useEffect, useState } from 'react'
 import { GlobalContext } from '../../context/Provider'
 import React from 'react'
-const { v4: uuidv4 } = require('uuid')
 import RegularInput from './RegularInput'
 import AdvancedInput from './AdvancedInput'
 
@@ -107,8 +106,8 @@ const InputField = ({
 
   const handleSubmit = async (event: any, advText?: string) => {
     event.preventDefault()
-    const createUuid = uuidv4()
-    const replyUuid = uuidv4()
+    const createUuid = self.crypto.randomUUID();
+    const replyUuid = self.crypto.randomUUID();
     mode === 'editMode'
       ? editMode(advText)
       : mode === 'replyMode'
